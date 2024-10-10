@@ -41,10 +41,20 @@ potrebbero essere altre due classi principali che poi noi aggiungiamo ai figli c
 ----------------------------------------------------------------------------------------------------------------
                      SECONDO APPROCCIO
 
-Creerei una "Macrocategoria" che contiene tutte le informazioni: cioè creare class Prodotto : $nome; $prezzo; $marchio; $categoria; ----> che in questo caso sono "Cani" e/o "Gatti"
+Creerei una "Macrocategoria" che contiene tutte le informazioni: 
 
-in questo caso poi andrei a creare le classi gnerali cioè "Giochi, cibo e cucce" |_ così facendo poi io posso ereditare dal padre cioè "Prodotto" gli attributi che ho specificato prima cioè $nome - $prezzo - $marchio e siccome è una classe nuova aggiungere $kg -->(cioè per $cibo la quantità del prodotto) $taglia -->(cioè per chi è rivolto il $cibo perché in base alla taglia può differire o essere consigliato diversamente)
+cioè creare 
+class Prodotto : $nome; $prezzo; $marchio; $categoria; ----> che in questo caso sono "Cani" e/o "Gatti"
 
-lo stesso per $cucce che andrei a estendrmi il padre e aggiungere $taglia -->(che come per il cibo esistono dimensioni differenti)
+
+in questo caso poi andrei a creare le classi gnerali cioè "Giochi, cibo e cucce"
+ |_ così facendo poi io posso ereditare dal padre cioè "Prodotto" 
+ gli attributi che ho specificato prima cioè $nome - $prezzo - $marchio
+e siccome è una classe nuova aggiungere $kg -->(cioè per $cibo la quantità del prodotto)
+                                        $taglia -->(cioè per chi è rivolto il $cibo perché in base alla taglia può differire o essere consigliato diversamente)
+
+
+lo stesso per $cucce che andrei a estendrmi il padre e aggiungere
+                                        $taglia -->(che come per il cibo esistono dimensioni differenti)
 
 mentre per i $giochi non saprei che aggiungere come attributi quindi gli farei ereditare quelli dal padre e basta.
