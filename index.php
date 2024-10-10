@@ -5,15 +5,15 @@ class Products {
     public $name; 
     public $price; 
     public $brand; 
-    public $category
+    public $category;
 
 
     //Definisco il COSTRUTTORE della mia classe
     function __construct ($name, $price, $brand, $category){
-        $this->name;
-        $this->price;
-        $this->brand;
-        $this->category;
+        $this->name = $name;
+        $this->price = $price;
+        $this->brand = $brand;
+        $this->category = $category;
     }
 }
 
@@ -25,13 +25,13 @@ class Toys extends Products { //adesso quindi erediterò dal padre cioè "Produc
 }
 
 class Food extends Products { //adesso quindi erediterò dal padre cioè "Products" gli attributi che mi interessano cioè tutti E le sue proprietà uniche
-    &size;
-    $kg;
+   public $size; //definisce la taglia adatta per il cibo
+   public $kg;   //definisce la quantità in kg del cibo
 
 }
 
-class kennels extends Products { //adesso quindi erediterò dal padre cioè "Products" gli attributi che mi interessano cioè tutti E le sue proprietà uniche 
-    $size
+class Kennels extends Products { //adesso quindi erediterò dal padre cioè "Products" gli attributi che mi interessano cioè tutti E le sue proprietà uniche 
+   public $size; //definisce la taglia adatta della cuccia - cioè la grandezza 
 
 }
 
