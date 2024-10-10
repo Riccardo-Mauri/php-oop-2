@@ -19,24 +19,33 @@ class Products {
 
 //Creo le altre mi classi principali che sono "Cibo - Giochi - Cucce"
 
-class Toys extends Products { //adesso quindi erediterò dal padre cioè "Products" gli attributi che mi interessano cioè tutti
-    
-
+class Toys extends Products { 
+    //adesso quindi erediterò dal padre cioè "Products" gli attributi che mi interessano cioè tutti
 }
 
 class Food extends Products { //adesso quindi erediterò dal padre cioè "Products" gli attributi che mi interessano cioè tutti E le sue proprietà uniche
    public $size; //definisce la taglia adatta per il cibo
    public $kg;   //definisce la quantità in kg del cibo
 
+   // Costruttore della classe "Food" che contiene poi le sue proprietà uniche
+    function __construct($name, $price, $brand, $category, $size, $kg){
+        parent::__construct($name, $price, $brand, $category);//richiamo il costruttore del padre 
+        $this->size = $size;
+        $this->kg = $kg;
+    }
+
 }
 
 class Kennels extends Products { //adesso quindi erediterò dal padre cioè "Products" gli attributi che mi interessano cioè tutti E le sue proprietà uniche 
    public $size; //definisce la taglia adatta della cuccia - cioè la grandezza 
 
+       // Costruttore della classe "Kennels" che contiene poi le sue proprietà uniche
+       function __construct($name, $price, $brand, $category, $size){
+        parent::__construct($name, $price, $brand, $category);//richiamo il costruttore del padre 
+        $this->size = $size;
+    }
+
 }
-
-
-
 
 ?>
 
