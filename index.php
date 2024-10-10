@@ -46,6 +46,22 @@ class Kennels extends Products { //adesso quindi erediterò dal padre cioè "Pro
     }
 
 }
+//adesso creo i miei prodotti effettivi-variabili per i Cani
+
+$DogToy = new Toys('Pallina per cani - Morbida', 5.99, 'FamousBrand', 'Cani');
+
+$DogFood = new Food('Crocchette per cani', 39.99, 'Royal Canin', 'Cani', 'Grande', 5);
+
+$DogKennel = new Kennels('Cuccia per cani morbida', 40.99, 'CareyourPet', 'Cani', 'Media');
+
+//adesso creo i miei prodotti effettivi-variabili per i Gatti
+
+$KatToy = new Toys('Topolino di pezza', 9.99, 'FamousBrand', 'Gatti');
+
+$KatFood = new Food('Umido per gatti', 4.99, 'Whiskas', 'Gatti', 'Piccolo', 3);
+
+$KatKennel = new Kennels('Cuccietta per gattini', 29.99, 'CareyourPet', 'Gatti', 'Piccolo')
+
 
 ?>
 
