@@ -88,7 +88,7 @@ $catCategory = new Category('Gatti', '🐱');
 try {
     $DogToy = new Toys('Pallina per cani - Morbida', 5.99, 'FamousBrand', $dogCategory, 'https://arcaplanet.vtexassets.com/arquivos/ids/229318/trixie-cane-palla-in-gomma-naturale-con-squittio.jpg?v=637454816312200000');
 
-    $DogFood = new Food('Crocchette per cani', -39.99, 'Royal Canin', $dogCategory, 'https://www.ipelosi.it/cache/royal-canin-maxi-adult-5-kg-15-crocchette-cani_78_it-750-750.jpg', 'Grande', 5);
+    $DogFood = new Food('Crocchette per cani', 39.99, 'Royal Canin', $dogCategory, 'https://www.ipelosi.it/cache/royal-canin-maxi-adult-5-kg-15-crocchette-cani_78_it-750-750.jpg', 'Grande', 5);
 
     $DogKennel = new Kennels('Cuccia per cani morbida', 40.99, 'CareyourPet', $dogCategory, 'https://www.omlet.it/images/catalog/2022/07/05/dogs-love-resting-in-the-fido-studio-modern-dog-crate-omlet.jpg', 'Media');
 
